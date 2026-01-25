@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* App */
+		1100000000000001 /* DailyRoutineBlocksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000001 /* DailyRoutineBlocksApp.swift */; };
+		1100000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000002 /* ContentView.swift */; };
+		/* Models */
+		1100000000000003 /* TimeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000003 /* TimeBlock.swift */; };
+		1100000000000004 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000004 /* Routine.swift */; };
+		1100000000000005 /* RoutineBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000005 /* RoutineBlock.swift */; };
+		/* ViewModels */
+		1100000000000006 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000006 /* TimelineViewModel.swift */; };
+		1100000000000007 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000007 /* RoutineViewModel.swift */; };
+		1100000000000008 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000008 /* SettingsViewModel.swift */; };
+		/* Views */
+		1100000000000009 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000009 /* MainTabView.swift */; };
+		110000000000000A /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000A /* TimelineView.swift */; };
+		110000000000000B /* TimeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000B /* TimeBlockView.swift */; };
+		110000000000000C /* TimeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000C /* TimeIndicatorView.swift */; };
+		110000000000000D /* HourMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000D /* HourMarkerView.swift */; };
+		110000000000000E /* BlockCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000E /* BlockCreationSheet.swift */; };
+		110000000000000F /* BlockDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000F /* BlockDetailSheet.swift */; };
+		1100000000000010 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000010 /* ColorPickerView.swift */; };
+		1100000000000011 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000011 /* IconPickerView.swift */; };
+		1100000000000012 /* RoutineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000012 /* RoutineListView.swift */; };
+		1100000000000013 /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000013 /* RoutineDetailView.swift */; };
+		1100000000000014 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000014 /* SettingsView.swift */; };
+		1100000000000015 /* DayNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000015 /* DayNavigationView.swift */; };
+		1100000000000016 /* WeekOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000016 /* WeekOverviewView.swift */; };
+		/* Services */
+		1100000000000017 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000017 /* DataService.swift */; };
+		1100000000000018 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000018 /* NotificationService.swift */; };
+		/* Utilities */
+		1100000000000019 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2100000000000019 /* DateExtensions.swift */; };
+		110000000000001A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000001A /* ColorExtensions.swift */; };
+		110000000000001B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000001B /* Constants.swift */; };
+		/* Resources */
+		110000000000001C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210000000000001C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3100000000000001 /* DailyRoutineBlocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyRoutineBlocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		/* App */
+		2100000000000001 /* DailyRoutineBlocksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRoutineBlocksApp.swift; sourceTree = "<group>"; };
+		2100000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		/* Models */
+		2100000000000003 /* TimeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlock.swift; sourceTree = "<group>"; };
+		2100000000000004 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		2100000000000005 /* RoutineBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineBlock.swift; sourceTree = "<group>"; };
+		/* ViewModels */
+		2100000000000006 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
+		2100000000000007 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
+		2100000000000008 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		/* Views */
+		2100000000000009 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		210000000000000A /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		210000000000000B /* TimeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBlockView.swift; sourceTree = "<group>"; };
+		210000000000000C /* TimeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicatorView.swift; sourceTree = "<group>"; };
+		210000000000000D /* HourMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourMarkerView.swift; sourceTree = "<group>"; };
+		210000000000000E /* BlockCreationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCreationSheet.swift; sourceTree = "<group>"; };
+		210000000000000F /* BlockDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDetailSheet.swift; sourceTree = "<group>"; };
+		2100000000000010 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		2100000000000011 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
+		2100000000000012 /* RoutineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineListView.swift; sourceTree = "<group>"; };
+		2100000000000013 /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
+		2100000000000014 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2100000000000015 /* DayNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNavigationView.swift; sourceTree = "<group>"; };
+		2100000000000016 /* WeekOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekOverviewView.swift; sourceTree = "<group>"; };
+		/* Services */
+		2100000000000017 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		2100000000000018 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		/* Utilities */
+		2100000000000019 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		210000000000001A /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		210000000000001B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		/* Resources */
+		210000000000001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4100000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5100000000000001 = {
+			isa = PBXGroup;
+			children = (
+				5100000000000002 /* DailyRoutineBlocks */,
+				5100000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5100000000000002 /* DailyRoutineBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000001 /* DailyRoutineBlocksApp.swift */,
+				2100000000000002 /* ContentView.swift */,
+				5100000000000004 /* Models */,
+				5100000000000005 /* ViewModels */,
+				5100000000000006 /* Views */,
+				510000000000000D /* Services */,
+				510000000000000E /* Utilities */,
+				510000000000000F /* Resources */,
+			);
+			path = DailyRoutineBlocks;
+			sourceTree = "<group>";
+		};
+		5100000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3100000000000001 /* DailyRoutineBlocks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5100000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000003 /* TimeBlock.swift */,
+				2100000000000004 /* Routine.swift */,
+				2100000000000005 /* RoutineBlock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5100000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000006 /* TimelineViewModel.swift */,
+				2100000000000007 /* RoutineViewModel.swift */,
+				2100000000000008 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5100000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000009 /* MainTabView.swift */,
+				5100000000000007 /* Timeline */,
+				5100000000000008 /* Blocks */,
+				5100000000000009 /* Routines */,
+				510000000000000A /* Settings */,
+				510000000000000B /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5100000000000007 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				210000000000000A /* TimelineView.swift */,
+				210000000000000B /* TimeBlockView.swift */,
+				210000000000000C /* TimeIndicatorView.swift */,
+				210000000000000D /* HourMarkerView.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		5100000000000008 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				210000000000000E /* BlockCreationSheet.swift */,
+				210000000000000F /* BlockDetailSheet.swift */,
+				2100000000000010 /* ColorPickerView.swift */,
+				2100000000000011 /* IconPickerView.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		5100000000000009 /* Routines */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000012 /* RoutineListView.swift */,
+				2100000000000013 /* RoutineDetailView.swift */,
+			);
+			path = Routines;
+			sourceTree = "<group>";
+		};
+		510000000000000A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000014 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		510000000000000B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000015 /* DayNavigationView.swift */,
+				2100000000000016 /* WeekOverviewView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		510000000000000D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000017 /* DataService.swift */,
+				2100000000000018 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		510000000000000E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2100000000000019 /* DateExtensions.swift */,
+				210000000000001A /* ColorExtensions.swift */,
+				210000000000001B /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		510000000000000F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				210000000000001C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6100000000000001 /* DailyRoutineBlocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7100000000000003 /* Build configuration list for PBXNativeTarget "DailyRoutineBlocks" */;
+			buildPhases = (
+				6100000000000002 /* Sources */,
+				4100000000000001 /* Frameworks */,
+				6100000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyRoutineBlocks;
+			productName = DailyRoutineBlocks;
+			productReference = 3100000000000001 /* DailyRoutineBlocks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0100000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6100000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 7100000000000001 /* Build configuration list for PBXProject "DailyRoutineBlocks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5100000000000001;
+			productRefGroup = 5100000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6100000000000001 /* DailyRoutineBlocks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6100000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110000000000001C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6100000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1100000000000001 /* DailyRoutineBlocksApp.swift in Sources */,
+				1100000000000002 /* ContentView.swift in Sources */,
+				1100000000000003 /* TimeBlock.swift in Sources */,
+				1100000000000004 /* Routine.swift in Sources */,
+				1100000000000005 /* RoutineBlock.swift in Sources */,
+				1100000000000006 /* TimelineViewModel.swift in Sources */,
+				1100000000000007 /* RoutineViewModel.swift in Sources */,
+				1100000000000008 /* SettingsViewModel.swift in Sources */,
+				1100000000000009 /* MainTabView.swift in Sources */,
+				110000000000000A /* TimelineView.swift in Sources */,
+				110000000000000B /* TimeBlockView.swift in Sources */,
+				110000000000000C /* TimeIndicatorView.swift in Sources */,
+				110000000000000D /* HourMarkerView.swift in Sources */,
+				110000000000000E /* BlockCreationSheet.swift in Sources */,
+				110000000000000F /* BlockDetailSheet.swift in Sources */,
+				1100000000000010 /* ColorPickerView.swift in Sources */,
+				1100000000000011 /* IconPickerView.swift in Sources */,
+				1100000000000012 /* RoutineListView.swift in Sources */,
+				1100000000000013 /* RoutineDetailView.swift in Sources */,
+				1100000000000014 /* SettingsView.swift in Sources */,
+				1100000000000015 /* DayNavigationView.swift in Sources */,
+				1100000000000016 /* WeekOverviewView.swift in Sources */,
+				1100000000000017 /* DataService.swift in Sources */,
+				1100000000000018 /* NotificationService.swift in Sources */,
+				1100000000000019 /* DateExtensions.swift in Sources */,
+				110000000000001A /* ColorExtensions.swift in Sources */,
+				110000000000001B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8100000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8100000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8100000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyRoutineBlocks/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailyroutineblocks.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8100000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyRoutineBlocks/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailyroutineblocks.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7100000000000001 /* Build configuration list for PBXProject "DailyRoutineBlocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8100000000000001 /* Debug */,
+				8100000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7100000000000003 /* Build configuration list for PBXNativeTarget "DailyRoutineBlocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8100000000000003 /* Debug */,
+				8100000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0100000000000001 /* Project object */;
+}
